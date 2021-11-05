@@ -1,25 +1,41 @@
-#box, #box2, #box3 {
-    background-color: orange;
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.row {
+    width: 100%;
+}
+
+.col {
+    padding: 0px;
+    margin: 2px;
+    border: 2px solid black;
+    float: left;
 }
 
 @media (min-width: 992px) {
-    #box, #box2, #box3 {
-        width: 33.3%;
+    .col-lg-1, .col-lg-2, .col-lg-3 {
+        width: 33.33%;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    #box, #box2 {
+    .col-md-1, .col-md-2 {
         width: 50%;
     }
-
-    #box3 {
+    .col-md-3 {
         width: 100%;
+        clear: left;
     }
 }
 
 @media (max-width: 767px) {
-    #box, #box2, #box3 {
+    .col-sm-1, .col-sm-2, .col-sm-3 {
         width: 100%;
     }
 }
