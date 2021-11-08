@@ -12,6 +12,7 @@ body {
 #header-nav {
     border-radius: 0;
     border: 0;
+    min-height: 80px;
     background-color: #afd5aa;
 }
 
@@ -19,7 +20,7 @@ body {
     padding-top: 25px;
 }
 .navbar-brand h1 {
-    font-size: 1.5em;
+    font-size: 2.5em;
     text-transform: uppercase;
     font-weight: bold;
     color: #8c6057;
@@ -51,6 +52,22 @@ body {
     margin-top: -30px;
 }
 /* END HEADER */
+
+/* Main Content */
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.section {
+    border: 2px solid #000;
+    margin-bottom: 30px;
+    padding: 10px;
+}
 
 @media (max-width: 767px) {
     #collapsable-nav {
